@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>tgm tourney overlay</title>
+  <meta name="author" content="pkaz">
+  <meta charset="utf-8">
+  <title>TGM VS Overlay</title>
+  <link href="/static/style.css" rel="stylesheet">
+  <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+  
+</head>
+
+<body>
+    <div class="content">
+        <div class="p1">
+            <div class="icon">
+                <img src="/static/placeholder.png" >
+            </div>
+            <div class="country">
+                <img src="/static/placeholder.png">
+                <p></p>
+            </div>
+            <div class="since">
+                <p>Since: <span class="date"></span></p>
+            </div>
+            <div class="stats">
+                <table>
+                    <tr>
+                      <th>VS</th>
+                      <th>W</th>
+                      <th>L</th>
+                      <th>%</th>
+                    </tr>
+                    <tr>
+                      <td><img src="/static/rank5.png"></td>
+                      <td class="wins">0</td>
+                      <td class="loss">0</td>
+                      <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/rank4.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="static/rank3.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/rank2.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="static/p2.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="rival">
+                <p>Rival: <span class="name"></span></p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="p1name">
+                <img src="/static/rank0.png">
+                <h3></h3>
+            </div>
+            <div class="scores-wrapper">
+                <div class="scores">
+                    <h3><span class="p1Score">0</span> - FT<span class="sets">2</span> - <span class="p2Score">0</span></h3>
+                </div>
+            </div>
+            <div class="p2name">
+                <h3></h3>
+                <img src="/static/rank0.png">
+            </div>
+        </div>
+        <div class="p2">
+            <div class="icon">
+                <img src="/static/placeholder.png" >
+            </div>
+            <div class="country">
+                
+                <img src="/static/placeholder.png">
+                <p></p>
+            </div>
+            <div class="since">
+                <p>Since: <span class="date"></span></p>
+            </div>
+            <div class="stats">
+                <table>
+                    <tr>
+                      <th>VS</th>
+                      <th>W</th>
+                      <th>L</th>
+                      <th>%</th>
+                    </tr>
+                    <tr>
+                      <td><img src="/static/rank5.png"></td>
+                      <td class="wins">0</td>
+                      <td class="loss">0</td>
+                      <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/rank4.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/rank3.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/rank2.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                    <tr>
+                        <td><img src="/static/p2.png"></td>
+                        <td class="wins">0</td>
+                        <td class="loss">0</td>
+                        <td ><span class="percent">0</span>%</td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="rival">
+                <p>Rival: <span class="name"></span></p>
+            </div>
+        </div>
+    </div>
+
+<script src="/static/script.js"></script>
+</body>
+
+</html>

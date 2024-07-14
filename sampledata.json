@@ -1,0 +1,42 @@
+{
+    "match":{
+        "p1Score":0,
+        "p2Score":0,
+        "firstTo":2
+
+    },
+    "players":[
+        {
+            "username":"pkaz",
+            "pfp":"https://www.gravatar.com/avatar/94b581a0f4fad5a5d70c5e5e257a84e4?s=250",
+            "rank":"A",
+            "country":"United States",
+            "flag_img":"imgs/usflag.png",
+            "since":"2023-09-24",
+            "stats":[
+                [99990, 9999, 100],
+                [999, 999, 100],
+                [99, 99, 50],
+                [0,0,1],
+                [9999,9999,100]
+            ],
+            "rival":"Hikarus"
+        },
+        {
+            "username":"colour_thief",
+            "pfp":"https://www.gravatar.com/avatar/28ae93459bcbfe67df80f3ac082fcac8?s=250",
+            "rank":"A",
+            "country":"Canada",
+            "flag_img":"imgs/ca.png",
+            "since":"2021-01-18",
+            "stats":[
+                [9999, 9999, 100],
+                [999, 999, 100],
+                [99, 99, 50],
+                [0,0,1],
+                [9999,9999,100]
+            ],
+            "rival":"DeHackEd"
+        }
+    ]
+}
