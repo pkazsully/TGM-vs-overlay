@@ -14,7 +14,7 @@
 
 ## How to use
 
-After installing dependencies with requirements.txt, run server.py. You can check if it is working correctly by opening `http://127.0.0.1:{port}/` (default port is 5000) in a browser if you'd like.
+After cloning/dl-ing and installing dependencies with requirements.txt, run server.py. You can check if it is working correctly by opening `http://127.0.0.1:{port}/` (default port is 5000) in a browser if you'd like.
 
 Next in obs, make a browser source with the same url (`http://127.0.0.1:{port}/`). Set the width and height to whatever reasonable 16:9 resolution you want, and leave on the custom css that enables transparency.
 
