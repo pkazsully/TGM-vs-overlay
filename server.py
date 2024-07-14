@@ -81,4 +81,4 @@ def clear():
     return jsonify({"message":"Cleared Screen"})
 
 if __name__ == '__main__':
-    socketio.run(app, port=port)
+    socketio.run(app, port=port, allow_unsafe_werkzeug=True)
