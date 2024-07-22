@@ -1,10 +1,11 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_from_directory
 from flask_socketio import SocketIO, emit
 
 port = 5000;
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
+image_directory = 'C:/Users/pkaz/Downloads/test/'
 
 data = {
     "match":{
@@ -79,6 +80,10 @@ def show():
 def clear():
     socketio.emit("clear")
     return jsonify({"message":"Cleared Screen"})
+
+@app.route('/images/<path:filename>')
+def serve_image(filename):
+    return send_from_directory(image_directory, filename)
 
 if __name__ == '__main__':
     socketio.run(app, port=port)

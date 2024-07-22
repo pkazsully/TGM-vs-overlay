@@ -48,8 +48,8 @@ const clear ={
         }
     ]
 }
-
-socket.on('clear', () => {update(clear)})
+temp = false;
+socket.on('clear', () => {actualUpdate(clear)})
 
 function updateScores(data){
     console.log("score update");
@@ -57,18 +57,8 @@ function updateScores(data){
     document.getElementsByClassName("p2Score")[0].innerText = data.p2;
 }
 
-function update(data){
-    var p1Element = document.querySelector('.p1');
-    var p2Element = document.querySelector('.p2');
-    var middleElement = document.querySelector('.middle')
-    // Add class to slide out elements
-    middleElement.classList.add('slide-out-top');
-    p1Element.classList.add('slide-out-left');
-    p2Element.classList.add('slide-out-right');
-
-    // Wait for the slide-out animation to complete before updating
-    setTimeout(function() {
-        //initialize header
+function actualUpdate(data){
+    //initialize header
         //get the p1Name field
         p1Name = document.getElementsByClassName('p1name');
         //set p1 rank
@@ -143,6 +133,20 @@ function update(data){
         p2Percent.forEach((percent, i) => percent.innerText = p2.stats[i][2]);
         //set rival
         rival[1].innerText = p2.rival;
+}
+
+function update(data){
+    var p1Element = document.querySelector('.p1');
+    var p2Element = document.querySelector('.p2');
+    var middleElement = document.querySelector('.middle')
+    // Add class to slide out elements
+    middleElement.classList.add('slide-out-top');
+    p1Element.classList.add('slide-out-left');
+    p2Element.classList.add('slide-out-right');
+
+    // Wait for the slide-out animation to complete before updating
+    setTimeout(function() {
+        actualUpdate(data);
 
         middleElement.classList.remove('slide-out-top');
         p1Element.classList.remove('slide-out-left');
