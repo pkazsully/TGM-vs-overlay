@@ -86,4 +86,4 @@ def serve_image(filename):
     return send_from_directory(image_directory, filename)
 
 if __name__ == '__main__':
-    socketio.run(app, port=port)
+    socketio.run(app, port=port, allow_unsafe_werkzeug=True)
