@@ -5,7 +5,7 @@ port = 5000;
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
-image_directory = 'C:/Users/pkaz/Downloads/test/'
+image_directory = 'C:/Your/Absolute/Directory/Here'
 
 data = {
     "match":{
