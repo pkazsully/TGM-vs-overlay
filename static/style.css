@@ -132,13 +132,13 @@ body{
 }
 
 .p1.slide-out-left {
-    transform: translateX(-150%);
-    transition: transform 1s ease;
+    transform: translateX(-200%);
+    transition: transform 1.4s ease;
 }
 
 .p2.slide-out-right {
-    transform: translateX(150%);
-    transition: transform 1s ease;
+    transform: translateX(200%);
+    transition: transform 1.4s ease;
 }
 
 .p1.slide-in-left {
